@@ -1,0 +1,509 @@
+#NEXUS
+[written Wed Sep 27 13:13:01 CEST 2023 by Mesquite  version 3.81 (build 955) at SCI1017864/10.179.47.34]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=29;
+	TAXLABELS
+		Afroquedius_sexpunctatus Valdiviodes_ashworthi Loncovilius_semiflavus Loncovilius_barclayi Loncovilius_lividipennis Loncovilius_carlsbergi Loncovilius_variabilis Loncovilius_edwardsianus Loncovilius_cantharaoides Loncovilius_germaini Loncovilius_hammondi Loncovilius_impunctus Lienturius_leiocephalus Apoquedius_aeneipennis Apoquedius_piciformis Sphingoquedius_discoideus Sphingoquedius_brevis Sphingoquedius_strandi Sphingoquedius_nanus Cheilocolpus_pyrostoma Cheilocolpus_impressifrons Rolla_wittei Rolla_paradoxa Rolla_prominens Heterothops_binotatus Heterothops_aff._exilis Quedius_xenophaenus Amblyopinus_emarginatus Quedius_fuscatus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "Supporting_Information_FileS1.nex"';
+	DIMENSIONS  NCHAR=108;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K M N P Q R S T U V W X Y Z a b c d e f g h j k m n p q r s t u";
+	CHARSTATELABELS 
+		1 '*Head, frontoclypeal (epistomal) suture:' /  absent distinct_only_laterally complete,
+		2 'Head, shape in males (width including eyes or widest part (HW)/ length from nuchal ridge, or when the latter is dorsally absent, then to a hypothetical line joining the sides of the nuchal ridge, to the frontal margin of the frontoclypeus (HL)): ' /  'about as wide as long (HW/HL ratio > 0.9 but < 1.1)' 'elongated (HW/HL ratio <= 0.9)' 'transverse (HW/HL ratio => 1.1)',
+		3 'Head, disc with coarse non-setiferous punctures (Fig. 7C):' /  absent present,
+		4 'Head, front, microsculpture:' /  transverse_to_concentric_waves meshed_to_isodiametric no_visible_microsculpture_,
+		5 'Head, antennal insertions (AI), position in relation to apical margin of frontoclypeus (AMF) and eye:' /  'AI situated closer to AMF than to eye (Fig. 7C)' 'AI situated at equal distance or closer to eye than to AMF (Figs 7D, E)',
+		6 'Head, antennae, antennomere in which tomentose pubescence begins:' /  fourth fifth,
+		7 'Head, antennae, length of antennomeres 3 and 2 ratio (a3/a2):' /  'a3 not visibly longer than a2 or subequal (maximum a3/a2 ratio < 1.1)' 'a3 moderately longer than a2 (a3/a2 ratio 1.1-1.2)' 'a3 distinctly longer than a2 (a3/a2 ratio > 1.2)',
+		8 'Head, antennae, male, length of antennomeres 11 and 10 ratio (a11/a10):' /  'a11 moderately longer than a10 (a11/a10 ratio <= 1.5) ' 'a11 distinctly longer than a10 (a11/a10 ratio > 1.5) ',
+		9 'Head, antennae, female, length of antennomeres 11 and 10 ratio (a11/a10):' /  'a11 moderately longer than a10 (a11/a10 ratio <= 1.5) ' 'a11 distinctly longer than a10 (a11/a10 ratio > 1.5) ',
+		10 '*Head, relative width of neck (width of neck (WN)/ width of head (HW)):' /  'neck not distinctly wide (WN/HW ratio <= 0.75) ' 'neck moderately wide (WN/HW ratio > 0.75 but < 0.90)' 'neck distinctly wide (WN/HW ratio >= 0.90) ',
+		11 'Head, ventral basal ridge (VBR) relative to gular sutures, development (fig. 1 in Smetana & Davies, 2000):' /  VBR_not_joining_to_gular_sutures_ VBR_joining_to_gular_sutures,
+		12 'Head, postgenal ridge (PGR, fig. 1 in Smetana & Davies, 2000): ' /  'absent (or reduced to a small trace near gular sutures)  ' present,
+		13 '*Head, anterior postgenal ridge (additional ridge running diagonally towards the gular sutures, between PGR and IOR):' /  absent present,
+		14 'Head, postmandibular ridge (PMR):' /  absent 'present (Fig. 9E, F)',
+		15 'Head, postmandibular ridge (PMR), if present, development (ventral view):' /  'extended parallel to margin of eye (fig. 5D Li & Zhou, 2011)' 'extended diagonal towards gula (fig. 5A Li & Zhou, 2011) ',
+		16 '*Head, postmandibular ridge (PMR), if present, position relative to eye margin (EM):' /  'PMR distinctly separated from EM (Fig. 9E)' 'PRM located close to EM (Fig. 9F)',
+		17 'Head, infraorbital ridge (IOR) in relation to PGR:' /  'IOR merged with PGR (fig. 2H in Chani-Posse, 2014)' IOR_not_merged_with_PGR,
+		18 'Head, nuchal ridge (NR), development:' /  'NR present dorsally and laterally (Fig. 8C)' 'NR missing dorsally, present laterally (Fig. 8D)',
+		19 'Head, nuchal ridge (NR), lateroventral development:' /  'NR merged with IOR (fig. 5A in Brunke et al., 2019)' 'NR not fused with IOR, NR extended as ''infraorbital ridge'' towards base of mandibles  ' 'NR not fused with IOR, NR not extended as ''infraorbital ridge'' towards base of mandibles  ',
+		20 'Head, postmandibular ridge (PMR), when present and merged with:' /  NR_only NR_fused_with_IOR,
+		21 'Head, mandibles, dorso-lateral groove:' /  absent_ 'present (figs 1C, E in Li & Zhou, 2011)',
+		22 'Head, mandibles (in dorsal view), external edge, shape:  ' /  slightly_straight_with_curved_base_and_apex 'distinctly curved along its length (C-shape)',
+		23 'Head, left mandible, basal teeth:' /  'only with proximal, not bifid tooth (fig. 2g in Schillhammer & Brunke, 2018)' 'only with proximal, bifid tooth (fig. 2h in Schillhammer & Brunke, 2018)' 'with not bifid proximal and distal teeth the latter short and truncated, space between both teeth rough',
+		24 'Head, right mandible, basal teeth:' /  'only with proximal, not bifid tooth (fig. 2g in Schillhammer & Brunke, 2018)' 'proximal tooth and distal tooth, distal tooth bifid, space between proximal and distal teeth narrow and smooth' 'proximal tooth and distal tooth, distal tooth not bifid, space between proximal and distal teeth narrow and smooth' 'proximal tooth and distal tooth, distal tooth not bifid, space between proximal and distal teeth wide and rough',
+		25 'Head, left mandible, (in lateral view) aspect:' /  rather_straight__ 'apical portion deflexed ventrally in an angle of 25-30°',
+		26 'Head, right mandible (in lateral view) aspect:' /  rather_straight__ 'apical portion deflexed ventrally in an angle of 25-30° ',
+		27 'Head, labrum, transparent wide apical membrane:' /  absent 'present (figs 4B, C in Li & Zhou, 2011)',
+		28 'Head, labrum, shape of anterior margin (only sclerotized part, excluding apical membrane where present):' /  'emarginate at middle (fig. 2A in Brunke et al. 2019)' 'entire, without emargination ',
+		29 'Head, maxillary palps, apical segment, shape: ' /  'more or less fusiform, widest at its middle portion (fig. 6D, F in Li & Zhou 2011) ' 'more or less conical, with sharply narrowed apex (fig. 6A in Li & Zhou 2011) ' 'more or less subconical, with evenly narrowed apex (fig. 6C in Li & Zhou 2011)',
+		30 'Head, maxillary palpus, relative length of palpomeres 4 (p4, apical) and 2 (p2) (p4/p2):' /  p4_as_long_as_or_longer_than_p2 'p4 distinctly shorter than p2 (p4/p2 ratio at most 0.75)',
+		31 'Head, maxillary palpus, relative width of palpomeres 4 (pw4, apical) and 3 (pw3, preapical) (pw4/pw3):' /  'preapical palpomere only weakly dilated (pw4/pw3 >= 0.75)' 'preapical palpomere markedly dilated (pw4/pw3 < 0.75)',
+		32 'Head, labial palps, apical segment, shape:' /  'more or less fusiform, widest at the middle portion (Fig. 8A in Li & Zhou 2011)' 'more or less subconical, with evenly narrowed apex (Fig. 8B and D in Li & Zhou 2011)' 'more or less cylindrical, parallel-sided, or slightly narrowed or dilated at apex',
+		33 'Head, labial palpus, relative length of palpomeres 3 (p3, apical) and 2 (p2, preapical) (p3/p2):' /  'p3 at least moderately longer than p2 (p3/p2 <= 1.25)' 'p3 distinctly longer than p2 (p3/p2 > 1.25)',
+		34 'Head, labial palpus, shape, and relative width of palpomeres 3 (pw3, apical) and 2 (pw2, preapical) (pw3/pw2):' /  'pw2 only weakly dilated to apex, pw3 subequal in width at widest point to pw2, or wider (pw3/pw2 => 0.75)' 'pw2 markedly dilated at apex, pw3 distinctly narrower than pw2, subparallel sided (pw3/pw2 < 0.75) ',
+		35 'Head, gular sutures (gs) in males, degree of separation measured as distance between gs at their closest point (gg) compared to the distance between metatentorial pits (mtp) ' /  'gs slightly separated from each other, gg/mtp < 0.33' 'gs moderately separated from each other, gg/mtp => 0.33 but < 0.55 ' 'gs widely separated from each other, gg/mtp >= 0.55  ',
+		36 'Head, gula, distinct transverse basal impression:' /  absent present,
+		37 'Head, eye length (EYL) relative to head length (HL):  ' /  'eyes very small (EYL/HL ratio less than 3/10)' 'eyes small (EYL/HL ratio more than 3/10 but less than 1/2)  ' 'eyes of medium size (EYL/HL ratio more than 1/2 but less than 3/4) ' 'eyes large (EYL/HL ratio more than 3/4)',
+		38 'Head, frontoclypeal puncture (fig. 1 in Brunke et al., 2019):' /  absent present,
+		39 '*Head, supra-antenal puncture (fig. 1 in Brunke et al., 2019):' /  absent present,
+		40 'Head, basal puncture (when present, fig. 1 in Brunke et al., 2019):' /  single double,
+		41 '*Head, parocular punctures (fig. 1 in Brunke et al., 2019) on each side (rarely an extra one may be present on one side):' /  one two three_or_more absent,
+		42 '*Head, position of posterior frontal puncture (PFP) in relation to temporal puncture (TP):' /  PFP_anterior_to_TP PFP_posterior_to_or_at_same_level_to_TP,
+		43 'Head, mentum, seta alpha (fig. 7a in Brunke & Solodovnikov, 2013):' /  absent present,
+		44 'Head, mentum, seta beta (fig. 7c in Brunke & Solodovnikov, 2013):' /  absent present,
+		45 'Prothorax, prosternum, sternacostal ridge medially:' /  'not protruding (in the same or nearly in the same plane as the basisternum, Fig. 4K in Chani-Posse, 2014)' 'protruding (distinctly in a plane more advanced than the basisternum, Fig. 4H in Chani-Posse, 2014)',
+		46 'Prothorax, basisternum (bs), length relative to length of furcasternum (fs) (bs/fs, measured ventrally along the midline):' /  'bs from about as long as to moderately longer than fs (bs/fs ratio up to 1.5) ' 'bs distinctly longer than fs (bs/fs ratio >> 1.5)',
+		47 'Prothorax, prosternum, longitudinal keel:' /  absent present,
+		48 'Prothorax, antesternal membrane with sclerotized patch or patches:' /  absent present,
+		49 'Prothorax, degree of fusion of pronotum (pnt) and prosternum (pst): ' /  'pnt and pst not fused in procoxal cavity, pronotosternal suture complete in cavity ' 'pnt and pst at least partially fused, pronotosternal suture missing in part of cavity  ',
+		50 'Prothorax, prosternum, basisternum, pair of macrosetae:' /  absent present,
+		51 'Prothorax, prosternum, basisternum, position of pair of macrosetae (ms, if present) in relation to anterior margin of prosternum (amp) and sternacostal suture (ss): ' /  'ms situated close to amp, not more than one third of the distance between amp and ss along the midline' 'ms situated far from amp, farther than one third of the distance between amp and ss along the midline',
+		52 'Pronotum, shape (along widest part of pronotum (PW)/ longest part (PL)):' /  'as long as wide (PW/PL >0.9 < 1.1)' 'distinctly transverse (PW/PL => 1.1)',
+		53 'Prothorax, pronotum, dorsal series of setiferous punctures, number of paired punctures: ' /  cero one two three,
+		54 'Prothorax, pronotum, dorsal series of setiferous punctures, additional paired punctures adjacent to anterior marginal row of setiferous punctures: ' /  absent present,
+		55 'Prothorax, pronotum, sublateral setiferous punctures:' /  absent present,
+		56 'Prothorax, flexible postcoxal hypomeral extension or process:' /  absent present,
+		57 'Prothorax, flexible postcoxal hypomeral extension or process, base:' /  'interrupted by inferior line (Fig. 5D in Brunke et al., 2019)' not_interrupted_by_inferior_line,
+		58 'Prothorax, flexible postcoxal hypomeral extension or process, shape:' /  rounded_to_triangular_as_wide_as_long elongated_and_thin,
+		59 'Prothorax, basisternum, shape:' /  'shield-shaped, lateral arms very short (fig. 11 in Solodovnikov, 2006)' 'triangular, lateral arms narrowed at least subapically (fig. 5 in Solodovnikov & Newton, 2010)  ',
+		60 'Prothorax, basisternum, disc:' /  'flat (fig. 4K in Chani-Posse, 2014)' protruding_medially,
+		61 'Legs, apical tarsomere, empodial setae, number:' /  pair_of_setae one_seta absent,
+		62 'Legs, apical tarsomere, empodial setae, relative length:' /  distinctly_shorter_than_tarsal_claws_ longer_or_at_least_as_long_as_tarsal_claws_,
+		63 'Legs, protarsi, tarsomeres 1-3, relative width:' /  'from as long as, to longer than wide  ' distinctly_wider_than_long,
+		64 '*Legs, sexual dimorphism in protibiae:' /  'absent (both sexes either have row of laterodorsal spines or not)  ' 'present (row of laterodorsal spines present only in females)',
+		65 '*Legs, protibiae when sexual dimorphism of character 64 absent:' /  laterodorsal_spines_on_protibia_absent_in_both_sexes laterodorsal_spines_on_protibia_present_in_both_sexes_,
+		66 '*Legs, protibiae, tibial spur resting on the base of the apical excavation (TSAE, usually delimited by a comb of spines) in relation to the anterior margin of the tibiae:' /  'TSAE not clearly outside tibial margin, usually close to tibial margin, when spur is remote, connected to tibial margin by a thin membranous region' 'TSAE distinctly outside tibial margin, usually spur distinctly away from tibial margin and completely isolated by sclerotized region',
+		67 'Legs, apex of profemur, apical row of lateroventral spines:' /  row_of_spines_only_on_apical_quarter row_of_spines_reaches_halfway,
+		68 'Legs, mesotarsi, ventral side, pale adhesive setae (flattened into a broad pad):' /  absent present,
+		69 'Legs, mesotarsi in females, ventral side, pale adhesive setae, development:' /  'present at mesotarsal segments 1-4' 'present at mesotarsal segments 2-4',
+		70 'Legs, metatarsi, relative length of tarsomeres 1 (t1) and 5 (t5) (t1/t5):' /  't1 shorter than t5 or at most both tarsomeres subequal (t1/t5 <= 1.0)' 't1 longer than t5 (t1/t5 > 1.0)',
+		71 'Legs, metatarsi, tarsomere 4, apical margin ventrally:' /  straight_or_slightly_sinuate 'bilobed (Fig. 9C)',
+		72 'Legs, procoxa, internal ridge, development (figs 9 D-G in Brunke & Solodovnikov, 2013): ' /  'not running along external ridge, ending distinctly before or nearly meeting' running_along_external_ridge,
+		73 'Legs, metacoxae, spines on the posterior surface:' /  '4 or less (fig. 3C in Chatzimanolis 2021) ' 'more than 4 (fig. 3D in Chatzimanolis 2021) ',
+		74 'Legs, metacoxae, basal versus apical part:' /  basal_part_distinctly_wider_and_more_convex_than_apical_part_ entire_coxae_without_distinction_between_basal_and_apical_part,
+		75 'Mesothorax, mesoscutellum, posterior scutellar ridge:' /  absent present,
+		76 'Mesothorax, elytron, subbasal ridge:' /  absent present,
+		77 'Mesothorax, elytron, humeral spines, or spine-like setae:' /  absent 'present (Fig. 5E in Brunke et al. 2019)',
+		78 'Mesothorax, elytron, punctuation:' /  with_evenly_setiferous_punctuation_on_disc_and_epipleuron_ 'with only a few macrosetae arranged in rows, epipleuron with more or less even punctation',
+		79 'Mesothorax, sternopleural (anapleural) suture shape: ' /  'transverse, or nearly transverse (very slightly oblique) ' distinctly_oblique_or_sinuate,
+		80 'Mesothorax, intercoxal process, apex:' /  'rounded or broadly pointed, forming obtuse angle' 'narrowly pointed forming sharp (acute) angle (Figs 60, 61 in Smetana & Davies, 2000)',
+		81 'Mesothorax, marginal carina of mesocoxal acetabuli complete:' /  'present (fig. 12 in Li & Zhou, 2011)' absent,
+		82 'Metathorax, metascutellar mid-longitudinal suture:' /  'well developed (fig. 13C, D in Li & Zhou 2011)  ' 'rudimentary, (very weak but clear at base) (fig. 13E in Li & Zhou 2011)' 'absent or very indistinct (fig. 13F in Li & Zhou 2011)',
+		83 'Metathorax, wings:' /  absent_or_reduced present,
+		84 'Abdomen, protergal glands, cuticular manifestation:' /  absent present,
+		85 '*Abdomen, tergite II, apical margin:' /  without_or_few_small_setiferous_puctures_along_margin with_distinctly_row_of_setiferous_puctures_along_margin with_setiferous_punctures_restricted_to_sides,
+		86 'Abdomen, tergite III, posterior transverse basal carina (PTBC):' /  absent present,
+		87 'Abdomen, tergite IV, posterior transverse basal carina (PTBC):' /  absent present,
+		88 'Abdomen, tergite V, posterior transverse basal carina (PTBC):' /  absent present,
+		89 'Abdomen, tergite VI, posterior transverse basal carina (PTBC):' /  absent present,
+		90 'Abdomen, apical margin of tergites and sternites III-VI position of apical row of setae:' /  behind_apical_margin_of_tergite 'at the apical margin of the tergite (the latter distinctly crenulate)  ',
+		91 '*Abdomen, tergites III-IV, punctation on disc:' /  'fine to moderate impressions (Figs 10A, B, E)' 'coarse to superficially elongated impressions (Figs 10C, D)',
+		92 '*Abdomen, tergites IX-VIII, length ratio (tIX/tVIII):  ' /  'tIX not longer than tVIII (maximum ratio 1.0)' 'tIX at least slightly longer than tVIII (ratio up to 1.1)',
+		93 '*Abdomen, tergites III-IV, setiferous punctation on disk (not micropunctation):' /  '1 to 3 rows of punctures, anterior half impunctate (Figs 10C, D)' 'more than 3 rows of punctures, anterior half punctate (Figs 10B, E)' 'patches of pale radiating setae (Fig 16D)' 'two patches of punctures separated by an impuncated area (Fig. 10A)',
+		94 '*Abdomen, tergite VII, anterior transverse basal carina (ATBC):' /  ATBC_continuing_to_paratergite 'ATBC without continuing to paratergite (Fig. 9D white arrow pointing down)',
+		95 '*Abdomen, male, tergite VIII, medial apical emargination:' /  absent present,
+		96 '*Abdomen, female, tergite VIII, medial apical emargination:' /  absent 'present (Figs 6A, 7C) ',
+		97 'Abdomen, male tergite X, shape:' /  'emarginate medio-apically or trilobed' apically_subtruncate_to_wide_and_subangulate_or_arcuate_ apically_distinctly_subacute_to_acute,
+		98 'Abdomen, female tergite X, shape: ' /  'emarginate medio-apically' 'concave medio-apically to apically truncate' apically_distinctly_subacute_to_acute,
+		99 'Abdomen, sternite III, basal transverse carina, shape of its lateral area:' /  'strongly arcuate (fig. 18B in Li & Zhou 2011)' 'sharply pointed medioapically (fig. 18D in Li & Zhou 2011)  ' converges_evenly_at_an_obtuse_angle 'converges abruptly at an acute angle rounded tip (projection sides not invaginated)' 'converges abruptly at an acute angle rounded tip (projection sides invaginated)',
+		100 'Abdomen, female sternite VIII, apical margin, medial emargination:  ' /  absent present,
+		101 'Abdomen, male sternite IX, relative length of basal (bp) and distal (dp) portions (bp/dp) (character after Chani-Posse, 2014b):' /  'bp shorter or at most as long as dp  (bp/dp at most 1.1) ' 'bp moderately longer than dp (bp/dp greater than 1.1 but less than 1.6)' 'bp distinctly longer than dp (bp/dp at least 1.6)',
+		102 'Abdomen, male sternite IX, apical median emargination:' /  distinct not_distinct,
+		103 'Abdomen, lateral tergal sclerites IX (styli), shape: ' /  not_dorsoventrally_or_laterally_flattened dorsoventrally_flattened laterally_flattened,
+		104 'Abdomen, male sternite IX, rectangular shape with nearly parallel sides' /  absent present,
+		105 'Aedeagus, paramere(s), black sensory peg setae:' /  absent present,
+		106 'Aedeagus, paramere(s), degree of attachment to median lobe:' /  'paramere(s) fused to median lobe only at base, otherwise paramere(s) distinctly separated from median lobe along entire length ' 'paremere(s) fused to median lobe only at base and very closely appressed to median lobe along entire length' 'paramere(s) fused to median lobe along its (their) entire length, paramere(s) and median lobe hardly distinguishable from each other',
+		107 'Aedeagus, paramere(s), shape:' /  'paramere(s) not (or at most slightly) produced over apex of median lobe' 'paramere(s) strongly produced over apex of median lobe',
+		108 'Ovipositor, each second gonocoxite, number of macrosetae (without minute styli):' /  'one (Fig. 10G)' 'three or more (Fig. 10H)' 'macrosetae absent (Fig. 10F)' ; 
+	MATRIX
+	Afroquedius_sexpunctatus    0202011110110100001-100001000000100020100010011011012111000100101000-000001110010211001110001000211010000002
+	Valdiviodes_ashworthi       02000110010100--112-000001100000100010103000011011010001000100101010-001001101010201200000001000220000200012
+	Loncovilius_semiflavus      2000100110000101-10-002311112001001121000010010000-020111010001000111000000000100010000000110111001120000100
+	Loncovilius_barclayi        2000100110000101-10-002311112001001121000010010000-020111010001000111000000000100010000000110111001121001100
+	Loncovilius_lividipennis    2000100110010101000-002311112001011111000110010000-0201110100011-0111100000000100010000000011111001110001110
+	Loncovilius_carlsbergi      2000100110010101000-002311112001011111000110010000-0211110100011-0111110000000100010000000011111002110001110
+	Loncovilius_variabilis      2000101110100101-00-002311112001001111010010010000-020111010001000110010000000100010000000010100110011001100
+	Loncovilius_edwardsianus    2101101100000101-12-002311112001001111011010010000-020011010001000110010000000100010000000110100122001000111
+	Loncovilius_cantharaoides   2101101100000101-12-002311112001002111011010010000-0200110100011-0110010000000100010000000110100122001000111
+	Loncovilius_germaini        2212000000000100-00-100111112001001111000001010000-1110100100011-0111000000001100010000000013101102100011102
+	Loncovilius_hammondi        2210100110000100-00-100111102001001111000001010000-111010010001010111000000011100010000000013111110100111102
+	Loncovilius_impunctus       2211100110000100-00-100111102001001121000001010000-1110100100010101110000000111?0010000000013111110100111102
+	Lienturius_leiocephalus     0200000001110110001-001201112011000121002010010001111011101000001010-001000100100011111110001100103001000110
+	Apoquedius_aeneipennis      1000000111110100100-001101100000102121001110000001101001111000101110-001100100010011111111001100000001000110
+	Apoquedius_piciformis       1100001001110100100-001101100000102121001110000001111001111000101110-00110010001001111110100110000?00?000110
+	Sphingoquedius_discoideus   2201100001111101000-100211112111001121000010110000-11001101101101010-101100100110011100001002100004111000110
+	Sphingoquedius_brevis       2200100001111101000-100211112111001121000010110000-11001001101001010-101000100110101100001002100004001000110
+	Sphingoquedius_strandi      2202100000110101001-10111111200100113100001000000111100110112-100100-000000100111111000000002100103001000110
+	Sphingoquedius_nanus        0200100000110101000-101111112112011131000010110001111001101101001100-000010100111101101000002100104011000110
+	Cheilocolpus_pyrostoma      0000000111110110001-101101102111011121001010110100-010(0 1)0--1010001100-000000010100011111100001000123010000110
+	Cheilocolpus_impressifrons  0000000000110110000-101101102110010111002110110100-02100--1010101000-001000000100011211100001000110001000110
+	Rolla_wittei                0000000110110110101-101101102111010111000110010001101001101000101000-001000100100011111100001100112000000110
+	Rolla_paradoxa              0100000001110110001-101101102111010101000110110100-02010--1010101100-000000010100?01211110001000?220??000110
+	Rolla_prominens             0000000011110110001-101101102110010100002010110100-11100--1010101110-000000010100011211110001000110000000110
+	Heterothops_binotatus       00000000001101100010001111112111011111001110010100-11000--1110101100-000000010100011111000001100110010000210
+	Heterothops_aff._exilis     00000001111101111001001111112112012121000110010101111000--1110001100-000000010110011111000001100100010000210
+	Quedius_xenophaenus         00010010021101000001011001101001012001000110000001111001001100001100-100010100110101100000001100001011000110
+	Amblyopinus_emarginatus     0211000000000100102-010000001012012001000111011011010000--1100101011010-010010010200100001001110010001100110
+	Quedius_fuscatus            1201000000010100001-101111100010001121000010010000-010111010101000110000010000100111000000001101202020200210
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 108;
+
+	EXSET * UNTITLED  = ;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 108;
+END;
+
+BEGIN NOTES;
+
+	SUT   TAXON = 3 NAME = color INTEGER = 5;
+
+	SU  T = 3 C = 1 N = color I = 5;
+
+	SU  T = 3 C = 5 N = color I = 5;
+
+	SU  T = 3 C = 7 N = color I = 5;
+
+	SU  T = 3 C = 11 N = color I = 5;
+
+	SU  T = 3 C = 12 N = color I = 5;
+
+	SU  T = 3 C = 19 N = color I = 5;
+
+	SU  T = 3 C = 21 N = color I = 5;
+
+	SU  T = 3 C = 22 N = color I = 5;
+
+	SU  T = 3 C = 24 N = color I = 5;
+
+	SU  T = 3 C = 27 N = color I = 5;
+
+	SU  T = 3 C = 29 N = color I = 5;
+
+	SU  T = 3 C = 30 N = color I = 5;
+
+	SU  T = 3 C = 32 N = color I = 5;
+
+	SU  T = 3 C = 33 N = color I = 5;
+
+	SU  T = 3 C = 35 N = color I = 5;
+
+	SU  T = 3 C = 36 N = color I = 5;
+
+	SU  T = 3 C = 37 N = color I = 5;
+
+	SU  T = 3 C = 38 N = color I = 5;
+
+	SU  T = 3 C = 43 N = color I = 5;
+
+	SU  T = 3 C = 44 N = color I = 5;
+
+	SU  T = 3 C = 45 N = color I = 5;
+
+	SU  T = 3 C = 46 N = color I = 5;
+
+	SU  T = 3 C = 47 N = color I = 5;
+
+	SU  T = 3 C = 49 N = color I = 5;
+
+	SU  T = 3 C = 50 N = color I = 5;
+
+	SU  T = 3 C = 51 N = color I = 5;
+
+	SU  T = 3 C = 52 N = color I = 5;
+
+	SU  T = 3 C = 56 N = color I = 5;
+
+	SU  T = 3 C = 57 N = color I = 5;
+
+	SU  T = 3 C = 59 N = color I = 5;
+
+	SU  T = 3 C = 60 N = color I = 5;
+
+	SU  T = 3 C = 63 N = color I = 5;
+
+	SU  T = 3 C = 68 N = color I = 5;
+
+	SU  T = 3 C = 70 N = color I = 5;
+
+	SU  T = 3 C = 72 N = color I = 5;
+
+	SU  T = 3 C = 74 N = color I = 5;
+
+	SU  T = 3 C = 75 N = color I = 5;
+
+	SU  T = 3 C = 76 N = color I = 5;
+
+	SU  T = 3 C = 77 N = color I = 5;
+
+	SU  T = 3 C = 78 N = color I = 5;
+
+	SU  T = 3 C = 79 N = color I = 5;
+
+	SU  T = 3 C = 80 N = color I = 5;
+
+	SU  T = 3 C = 82 N = color I = 5;
+
+	SU  T = 3 C = 83 N = color I = 5;
+
+	SU  T = 3 C = 84 N = color I = 5;
+
+	SU  T = 3 C = 86 N = color I = 5;
+
+	SU  T = 3 C = 87 N = color I = 5;
+
+	SU  T = 3 C = 88 N = color I = 5;
+
+	SU  T = 3 C = 95 N = color I = 5;
+
+	SU  T = 3 C = 97 N = color I = 5;
+
+	SU  T = 3 C = 99 N = color I = 5;
+
+	SU  T = 3 C = 100 N = color I = 5;
+
+	SU  T = 3 C = 101 N = color I = 5;
+
+	SU  T = 3 C = 102 N = color I = 5;
+
+	SU  T = 3 C = 103 N = color I = 5;
+
+	SU  T = 3 C = 105 N = color I = 5;
+
+	SU  T = 3 C = 106 N = color I = 5;
+
+	SU  T = 3 C = 107 N = color I = 5;
+
+	SU  T = 3 C = 108 N = color I = 5;
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1695813185140;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 2504405313918753609;
+			tell It;
+				setDefaultOrder  3 4 156 75 70 71 77 154 75 17 14 15 17 32 43 46 41 46 44 50 22 48 44 25 26 27 61 133 45;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 6329805258828241987;
+			tell It;
+				setDefaultOrder  0 2 4 271 23 5 42 343 344 13 630 88 20 14 34 32 21 269 296 22 581 263 167 262 276 339 305 263 306 428 37 311 109 34 659 260 246 250 138 143 154 146 334 335 468 578 703 56 137 144 703 257 67 68 147 254 255 64 255 305 87 81 502 332 203 70 73 308 234 183 92 270 115 311 149 304 150 259 180 629 92 283 185 186 84 188 189 189 109 98 266 268 265 95 354 157 530 174 649 196 197 202 528 103 531 543 544 544;
+				attachments ;
+			endTell;
+			mqVersion 381;
+			checksumv 0 3 418824637 null  getNumChars 108 numChars 108 getNumTaxa 29 numTaxa 29   short true   bits 31   states 31   sumSquaresStatesOnly 10428.0 sumSquares 10428.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 243;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1280 601;
+			setLocation -8 0;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #2504405313918753609 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #2504405313918753609;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					newAssistant  #mesquite.lists.DefaultTaxaOrder.DefaultTaxaOrder;
+					getTable;
+					tell It;
+						rowNamesWidth 245;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1037 529;
+					setLocation -8 0;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.TaxonList.TaxonListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Dark Gray;
+					removeColor on;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #6329805258828241987 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 275;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 80;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1037 469;
+					setLocation -8 0;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+					colorRowNames  #mesquite.charMatrices.NoColor.NoColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames off;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 645;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1037 529;
+						setLocation -8 0;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip on;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
