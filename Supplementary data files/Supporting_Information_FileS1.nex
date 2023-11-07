@@ -17,7 +17,7 @@ BEGIN CHARACTERS;
 	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K M N P Q R S T U V W X Y Z a b c d e f g h j k m n p q r s t u";
 	CHARSTATELABELS 
 		1 '*Head, frontoclypeal (epistomal) suture:' /  absent distinct_only_laterally complete,
-		2 'Head, shape in males (width including eyes or widest part (HW)/ length from nuchal ridge, or when the latter is dorsally absent, then to a hypothetical line joining the sides of the nuchal ridge, to the frontal margin of the frontoclypeus (HL)): ' /  'about as wide as long (HW/HL ratio > 0.9 but < 1.1)' 'elongated (HW/HL ratio <= 0.9)' 'transverse (HW/HL ratio => 1.1)',
+		2 'Head, shape in males (width including eyes or widest part (HW)/ length from nuchal ridge, or when the latter is dorsally absent, then to a hypothetical line joining the sides of the nuchal ridge, to the frontal margin of the frontoclypeus (HL)): ' /  'about as wide as long' 'elongated' 'transverse',
 		3 'Head, disc with coarse non-setiferous punctures (Fig. 7C):' /  absent present,
 		4 'Head, front, microsculpture:' /  transverse_to_concentric_waves meshed_to_isodiametric no_visible_microsculpture_,
 		5 'Head, antennal insertions (AI), position in relation to apical margin of frontoclypeus (AMF) and eye:' /  'AI situated closer to AMF than to eye (Fig. 7C)' 'AI situated at equal distance or closer to eye than to AMF (Figs 7D, E)',
@@ -40,8 +40,8 @@ BEGIN CHARACTERS;
 		22 'Head, mandibles (in dorsal view), external edge, shape:  ' /  slightly_straight_with_curved_base_and_apex 'distinctly curved along its length (C-shape)',
 		23 'Head, left mandible, basal teeth:' /  'only with proximal, not bifid tooth (fig. 2g in Schillhammer & Brunke, 2018)' 'only with proximal, bifid tooth (fig. 2h in Schillhammer & Brunke, 2018)' 'with not bifid proximal and distal teeth the latter short and truncated, space between both teeth rough',
 		24 'Head, right mandible, basal teeth:' /  'only with proximal, not bifid tooth (fig. 2g in Schillhammer & Brunke, 2018)' 'proximal tooth and distal tooth, distal tooth bifid, space between proximal and distal teeth narrow and smooth' 'proximal tooth and distal tooth, distal tooth not bifid, space between proximal and distal teeth narrow and smooth' 'proximal tooth and distal tooth, distal tooth not bifid, space between proximal and distal teeth wide and rough',
-		25 'Head, left mandible, (in lateral view) aspect:' /  rather_straight__ 'apical portion deflexed ventrally in an angle of 25-30°',
-		26 'Head, right mandible (in lateral view) aspect:' /  rather_straight__ 'apical portion deflexed ventrally in an angle of 25-30° ',
+		25 'Head, left mandible, (in lateral view) aspect:' /  rather_straight__ 'apical portion deflexed ventrally in an angle of 25-30Â°',
+		26 'Head, right mandible (in lateral view) aspect:' /  rather_straight__ 'apical portion deflexed ventrally in an angle of 25-30Â° ',
 		27 'Head, labrum, transparent wide apical membrane:' /  absent 'present (figs 4B, C in Li & Zhou, 2011)',
 		28 'Head, labrum, shape of anterior margin (only sclerotized part, excluding apical membrane where present):' /  'emarginate at middle (fig. 2A in Brunke et al. 2019)' 'entire, without emargination ',
 		29 'Head, maxillary palps, apical segment, shape: ' /  'more or less fusiform, widest at its middle portion (fig. 6D, F in Li & Zhou 2011) ' 'more or less conical, with sharply narrowed apex (fig. 6A in Li & Zhou 2011) ' 'more or less subconical, with evenly narrowed apex (fig. 6C in Li & Zhou 2011)',
